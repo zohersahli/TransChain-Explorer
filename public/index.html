@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TransChain Blockchain</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🔗 TransChain Explorer</h1>
+
+  <section id="new-block">
+    <h2>➕ Add a New Block</h2>
+    <form id="blockForm">
+      <input type="text" id="from" placeholder="Sender" required />
+      <input type="text" id="to" placeholder="Recipient" required />
+      <input type="number" id="amount" placeholder="Amount" required />
+      <button type="submit">Add Block</button>
+    </form>
+    <p id="form-message" style="font-weight: bold;"></p>
+
+  </section>
+
+  <section id="validate">
+    <h2>✅ Validate Blockchain</h2>
+    <button onclick="validateChain()">Check</button>
+    <p id="validation-result"></p>
+  </section>
+
+  <section id="chain">
+    <h2>📦 Blockchain Blocks</h2>
+    <div id="blockList"></div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
